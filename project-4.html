@@ -1,990 +1,453 @@
 <!doctype html>
 <html lang="vi">
-
 <head>
   <meta charset="utf-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
-
-  <meta
-    name="description"
-    content="Bài 4 về giao tiếp và hợp tác trong môi trường số, tập trung vào việc sử dụng Trello, Google Docs, Google Drive và Zalo trong dự án nhóm."
-  >
-
-  <meta
-    name="robots"
-    content="index,follow"
-  >
-
-  <meta
-    name="theme-color"
-    content="#2f80c9"
-  >
-
-  <title>
-    Bài 4 – Giao tiếp và hợp tác trong môi trường số | Nguyễn Phương Danh
-  </title>
-
-  <link
-    rel="icon"
-    href="assets/images/favicon.svg"
-    type="image/svg+xml"
-  >
-
-  <link
-    rel="stylesheet"
-    href="assets/css/styles.css"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sử dụng Trello, Google Docs, Google Drive và Zalo để quản lý công việc và phối hợp trực tuyến trong dự án nhóm.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#2f80c9">
+  <title>Bài 4 - Giao tiếp và hợp tác trong môi trường số | Nguyễn Phương Danh</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+<div class="scroll-progress" aria-hidden="true"></div>
 
-  <div
-    class="scroll-progress"
-    aria-hidden="true">
-  </div>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Về trang chủ">
+      <span class="brand-mark">PD</span>
+      <span class="brand-text">Nguyễn Phương Danh<small>Portfolio năng lực số</small></span>
+    </a>
 
-  <!-- THANH ĐIỀU HƯỚNG -->
-  <header class="site-header">
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="index.html">Trang chủ</a>
+      <a href="projects.html" class="active">Dự án</a>
+      <a href="summary.html">Tổng kết</a>
+    </nav>
 
-    <div class="container navbar">
-
-      <a
-        class="brand"
-        href="index.html"
-        aria-label="Về trang chủ">
-
-        <span class="brand-mark">PD</span>
-
-        <span class="brand-text">
-          Nguyễn Phương Danh
-          <small>Portfolio năng lực số</small>
-        </span>
-
-      </a>
-
-      <nav
-        class="nav-links"
-        aria-label="Điều hướng chính">
-
-        <a href="index.html">
-          Trang chủ
-        </a>
-
-        <a
-          href="projects.html"
-          class="active">
-          Dự án
-        </a>
-
-        <a href="summary.html">
-          Tổng kết
-        </a>
-
-      </nav>
-
-      <div class="nav-actions">
-
-        <button
-          class="icon-btn"
-          data-theme-toggle
-          type="button"
-          aria-label="Đổi giao diện">
-          ◐
-        </button>
-
-        <button
-          class="icon-btn menu-btn"
-          data-menu-toggle
-          type="button"
-          aria-expanded="false"
-          aria-label="Mở menu">
-          ☰
-        </button>
-
-      </div>
-
+    <div class="nav-actions">
+      <button class="icon-btn" data-theme-toggle type="button" aria-label="Đổi giao diện">◐</button>
+      <button class="icon-btn menu-btn" data-menu-toggle type="button" aria-expanded="false" aria-label="Mở menu">☰</button>
     </div>
+  </div>
+</header>
 
-  </header>
+<main>
 
-  <main>
-
-    <!-- PHẦN GIỚI THIỆU -->
-    <section class="page-hero">
-
-      <div class="container">
-
-        <div class="page-hero-inner reveal">
-
-          <div class="breadcrumb">
-
-            <a href="index.html">
-              Trang chủ
-            </a>
-
-            <span>›</span>
-
-            <a href="projects.html">
-              Dự án
-            </a>
-
-            <span>›</span>
-
-            <span>
-              Bài 4
-            </span>
-
-          </div>
-
-          <h1>
-            Giao tiếp và hợp tác trong môi trường số
-          </h1>
-
-          <p>
-            Dự án tập trung vào Bài tập 3: sử dụng Trello, Google Docs,
-            Google Drive và Zalo để quản lý nhiệm vụ, đóng góp nội dung,
-            lưu trữ tài liệu và phối hợp trong một dự án nhóm.
-            Trang còn bổ sung sản phẩm cuộc họp trực tuyến từ Bài tập 2.
-          </p>
-
-          <div class="hero-tags">
-
-            <span
-              class="tag"
-              style="
-                color: white;
-                border-color: rgba(255,255,255,.25);
-                background: rgba(255,255,255,.1);
-              ">
-              Bài 4 · Giao tiếp và hợp tác trong môi trường số
-            </span>
-
-          </div>
-
+  <!-- PHẦN GIỚI THIỆU -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner reveal">
+        <div class="breadcrumb">
+          <a href="index.html">Trang chủ</a>
+          <span>›</span>
+          <a href="projects.html">Dự án</a>
+          <span>›</span>
+          <span>Bài 4</span>
         </div>
 
+        <h1>Giao tiếp và hợp tác trong môi trường số</h1>
+
+        <p>
+          Sử dụng Trello, Google Docs, Google Drive và Zalo để quản lý nhiệm vụ,
+          cùng xây dựng nội dung, lưu trữ tài liệu và phối hợp trong dự án nhóm.
+          Hoạt động họp trực tuyến giúp các thành viên trao đổi, phản hồi
+          và thống nhất công việc hiệu quả hơn.
+        </p>
+
+        <div class="hero-tags">
+          <span class="tag" style="color:white;border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1)">
+            Bài 4 · Giao tiếp và hợp tác trong môi trường số
+          </span>
+        </div>
       </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- NỘI DUNG CHÍNH -->
+  <section class="section-sm">
+    <div class="container project-layout">
 
-    <!-- NỘI DUNG CHÍNH -->
-    <section class="section-sm">
+      <article class="project-main">
 
-      <div class="container project-layout">
+        <!-- 01. MỤC TIÊU -->
+        <section class="article-section reveal">
+          <span class="eyebrow">01 · Mục tiêu</span>
+          <h2>Năng lực cần hình thành</h2>
 
-        <article class="project-main">
+          <p class="lead">
+            Thành thạo các công cụ hợp tác trực tuyến và thể hiện năng lực quản lý,
+            điều phối công việc cá nhân trong quá trình tham gia dự án nhóm.
+          </p>
 
-          <!-- 01. MỤC TIÊU -->
-          <section class="article-section reveal">
+          <ul class="check-list">
+            <li>Sử dụng công cụ quản lý dự án để nhận nhiệm vụ và theo dõi tiến độ.</li>
+            <li>Đóng góp, chỉnh sửa và phản hồi trực tiếp trên tài liệu cộng tác.</li>
+            <li>Tổ chức, lưu trữ và chia sẻ tài liệu trong không gian làm việc chung.</li>
+            <li>Chủ động trao đổi và phối hợp với các thành viên trong môi trường số.</li>
+            <li>Ghi lại quá trình sử dụng công cụ bằng hình ảnh và báo cáo.</li>
+          </ul>
+        </section>
 
-            <span class="eyebrow">
-              01 · Mục tiêu
-            </span>
+        <!-- 02. CÔNG CỤ VÀ NHIỆM VỤ -->
+        <section class="article-section reveal">
+          <span class="eyebrow">02 · Công cụ và nhiệm vụ</span>
+          <h2>Tổ chức công việc và phối hợp trực tuyến</h2>
 
-            <h2>
-              Năng lực cần hình thành
-            </h2>
+          <p>
+            Trong một tuần, mình tham gia dự án nhóm và sử dụng nhiều công cụ
+            trực tuyến để quản lý nhiệm vụ, đóng góp nội dung, lưu trữ tài liệu
+            và trao đổi với các thành viên. Mỗi công cụ đảm nhiệm một vai trò
+            riêng nhưng được kết hợp trong cùng một quy trình làm việc.
+          </p>
 
-            <p class="lead">
-              Thành thạo các công cụ hợp tác trực tuyến và thể hiện
-              năng lực quản lý, điều phối công việc cá nhân
-              trong quá trình tham gia một dự án nhóm.
-            </p>
+          <div class="numbered-steps">
+            <div class="step">
+              <div>
+                <h4>Quản lý nhiệm vụ bằng Trello</h4>
+                <p>
+                  Theo dõi các nhiệm vụ được giao, người phụ trách, thời hạn hoàn thành
+                  và trạng thái Cần làm, Đang làm, Đã xong.
+                </p>
+              </div>
+            </div>
 
-            <ul class="check-list">
+            <div class="step">
+              <div>
+                <h4>Cộng tác trên Google Docs</h4>
+                <p>
+                  Trực tiếp soạn thảo và chỉnh sửa nội dung, theo dõi lịch sử thay đổi,
+                  sử dụng bình luận để góp ý và phản hồi với các thành viên.
+                </p>
+              </div>
+            </div>
 
-              <li>
-                Sử dụng công cụ quản lý dự án để nhận nhiệm vụ
-                và theo dõi tiến độ cá nhân.
-              </li>
+            <div class="step">
+              <div>
+                <h4>Lưu trữ trên Google Drive</h4>
+                <p>
+                  Lưu báo cáo, hình ảnh, tài liệu tham khảo, ghi chú và các tệp liên quan
+                  trong thư mục dùng chung của nhóm.
+                </p>
+              </div>
+            </div>
 
-              <li>
-                Đóng góp, chỉnh sửa và phản hồi trực tiếp
-                trên tài liệu cộng tác.
-              </li>
+            <div class="step">
+              <div>
+                <h4>Trao đổi qua Zalo</h4>
+                <p>
+                  Trao đổi tiến độ, thống nhất lịch làm việc, phản hồi thông tin
+                  và phối hợp xử lý các vấn đề phát sinh.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-              <li>
-                Tổ chức, lưu trữ và chia sẻ các tệp
-                do cá nhân phụ trách một cách khoa học.
-              </li>
+        <!-- 03. QUY TRÌNH THỰC HIỆN -->
+        <section class="article-section reveal">
+          <span class="eyebrow">03 · Quy trình thực hiện</span>
+          <h2>Quy trình phối hợp và hoàn thành công việc</h2>
 
-              <li>
-                Chủ động trao đổi và phối hợp
-                với các thành viên trong môi trường số.
-              </li>
+          <div class="numbered-steps">
+            <div class="step">
+              <div>
+                <h4>Bước 1 · Tiếp nhận nhiệm vụ</h4>
+                <p>
+                  Xác định phần việc được phân công, yêu cầu cần hoàn thành
+                  và thời hạn của nhiệm vụ trong dự án nhóm.
+                </p>
+              </div>
+            </div>
 
-              <li>
-                Ghi lại quá trình sử dụng công cụ
-                thông qua hình ảnh thể hiện nhiệm vụ
-                hoặc phần đóng góp cá nhân.
-              </li>
+            <div class="step">
+              <div>
+                <h4>Bước 2 · Theo dõi tiến độ</h4>
+                <p>
+                  Kiểm tra nhiệm vụ trên Trello, cập nhật trạng thái công việc
+                  và theo dõi các phần việc có liên quan.
+                </p>
+              </div>
+            </div>
 
-            </ul>
+            <div class="step">
+              <div>
+                <h4>Bước 3 · Đóng góp nội dung</h4>
+                <p>
+                  Tìm kiếm tài liệu, viết nội dung được giao, chỉnh sửa trên Google Docs
+                  và phản hồi các bình luận của nhóm.
+                </p>
+              </div>
+            </div>
 
-          </section>
+            <div class="step">
+              <div>
+                <h4>Bước 4 · Lưu trữ và trao đổi</h4>
+                <p>
+                  Sắp xếp các tệp vào đúng thư mục trên Google Drive
+                  và chủ động trao đổi với thành viên khác qua Zalo.
+                </p>
+              </div>
+            </div>
 
-          <!-- 02. NỘI DUNG CHÍNH -->
-          <section class="article-section reveal">
+            <div class="step">
+              <div>
+                <h4>Bước 5 · Ghi lại quá trình thực hiện</h4>
+                <p>
+                  Chụp màn hình quá trình sử dụng các công cụ,
+                  thể hiện nhiệm vụ, tài khoản hoặc phần đóng góp cá nhân.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <span class="eyebrow">
-              02 · Nội dung chính
-            </span>
+        <!-- 04. HOẠT ĐỘNG HỌP TRỰC TUYẾN -->
+        <section id="hoat-dong-hop-truc-tuyen" class="article-section reveal">
+          <span class="eyebrow">04 · Hoạt động họp trực tuyến</span>
+          <h2>Tổ chức và tham gia cuộc họp trực tuyến</h2>
 
-            <h2>
-              Bài tập 3: Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm
-            </h2>
+          <p class="lead">
+            Cuộc họp trực tuyến được thực hiện để các thành viên trình bày nội dung,
+            trao đổi ý kiến, phản hồi và thống nhất các công việc cần hoàn thành.
+          </p>
 
+          <div class="callout green">
+            <strong>Nội dung thể hiện</strong>
             <p>
-              Đây là bài tập chính được lựa chọn để xây dựng báo cáo
-              của Dự án 4. Trong một tuần, mình tham gia dự án nhóm
-              và sử dụng bốn nhóm công cụ trực tuyến để quản lý nhiệm vụ,
-              cùng xây dựng nội dung, lưu trữ tài liệu
-              và trao đổi với các thành viên.
+              Hoạt động cho thấy quá trình chuẩn bị nội dung, phân công vai trò,
+              trình bày ý kiến, lắng nghe và phối hợp giữa các thành viên
+              trong môi trường số.
             </p>
-
-            <div class="numbered-steps">
-
-              <div class="step">
-
-                <div>
-
-                  <h4>
-                    Quản lý nhiệm vụ bằng Trello
-                  </h4>
-
-                  <p>
-                    Theo dõi các nhiệm vụ được giao,
-                    người phụ trách, thời hạn hoàn thành
-                    và trạng thái Cần làm, Đang làm, Đã xong.
-                  </p>
-
-                </div>
-
-              </div>
-
-              <div class="step">
-
-                <div>
-
-                  <h4>
-                    Cộng tác trên Google Docs
-                  </h4>
-
-                  <p>
-                    Trực tiếp soạn thảo và chỉnh sửa phần nội dung cá nhân,
-                    theo dõi lịch sử thay đổi, sử dụng bình luận
-                    để góp ý và phản hồi với các thành viên.
-                  </p>
-
-                </div>
-
-              </div>
-
-              <div class="step">
-
-                <div>
-
-                  <h4>
-                    Lưu trữ trên Google Drive
-                  </h4>
-
-                  <p>
-                    Lưu báo cáo, hình ảnh, tài liệu tham khảo,
-                    ghi chú và các tệp cá nhân phụ trách
-                    trong thư mục dùng chung của nhóm.
-                  </p>
-
-                </div>
-
-              </div>
-
-              <div class="step">
-
-                <div>
-
-                  <h4>
-                    Trao đổi qua Zalo
-                  </h4>
-
-                  <p>
-                    Trao đổi tiến độ, thống nhất lịch làm việc,
-                    phản hồi thông tin và phối hợp xử lý
-                    các vấn đề phát sinh trong quá trình thực hiện.
-                  </p>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </section>
-
-          <!-- 03. QUY TRÌNH THỰC HIỆN -->
-          <section class="article-section reveal">
-
-            <span class="eyebrow">
-              03 · Quy trình thực hiện
-            </span>
-
-            <h2>
-              Quá trình cá nhân tham gia dự án nhóm
-            </h2>
-
-            <div class="numbered-steps">
-
-              <div class="step">
-
-                <div>
-
-                  <h4>
-                    Bước 1 · Tiếp nhận nhiệm vụ
-                  </h4>
-
-                  <p>
-                    Xác định phần việc cá nhân được phân công,
-                    yêu cầu cần hoàn thành và thời hạn
-                    của nhiệm vụ trong dự án nhóm.
-                  </p>
-
-                </div>
-
-              </div>
-
-              <div class="step">
-
-                <div>
-
-                  <h4>
-                    Bước 2 · Theo dõi tiến độ
-                  </h4>
-
-                  <p>
-                    Kiểm tra nhiệm vụ trên Trello,
-                    cập nhật trạng thái công việc
-                    và theo dõi các phần việc có liên quan.
-                  </p>
-
-                </div>
-
-              </div>
-
-              <div class="step">
-
-                <div>
-
-                  <h4>
-                    Bước 3 · Đóng góp nội dung
-                  </h4>
-
-                  <p>
-                    Tìm kiếm tài liệu, viết phần nội dung được giao,
-                    chỉnh sửa trên Google Docs
-                    và phản hồi các bình luận của nhóm.
-                  </p>
-
-                </div>
-
-              </div>
-
-              <div class="step">
-
-                <div>
-
-                  <h4>
-                    Bước 4 · Lưu trữ và trao đổi
-                  </h4>
-
-                  <p>
-                    Sắp xếp các tệp vào đúng thư mục trên Google Drive
-                    và chủ động trao đổi với thành viên khác qua Zalo.
-                  </p>
-
-                </div>
-
-              </div>
-
-              <div class="step">
-
-                <div>
-
-                  <h4>
-                    Bước 5 · Ghi lại quá trình thực hiện
-                  </h4>
-
-                  <p>
-                    Chụp màn hình quá trình sử dụng các công cụ,
-                    trong đó thể hiện nhiệm vụ, tài khoản
-                    hoặc phần đóng góp của cá nhân.
-                  </p>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </section>
-
-          <!-- 04. SẢN PHẨM BỔ SUNG -->
-          <section
-            id="san-pham-bo-sung"
-            class="article-section reveal">
-
-            <span class="eyebrow">
-              04 · Sản phẩm bổ sung
-            </span>
-
-            <h2>
-              Hoạt động tổ chức và tham gia cuộc họp trực tuyến
-            </h2>
-
-            <p class="lead">
-              Bên cạnh báo cáo chính của Bài tập 3,
-              trang bổ sung sản phẩm từ Bài tập 2
-              để thể hiện trực quan hơn khả năng giao tiếp,
-              trình bày và phối hợp giữa các thành viên trong môi trường số.
-            </p>
-
-            <div class="callout green">
-
-              <strong>
-                Nội dung của sản phẩm
-              </strong>
-
-              <p>
-                Sản phẩm ghi lại quá trình các thành viên
-                trình bày ý kiến, lắng nghe, phản hồi
-                và phối hợp để hoàn thành nhiệm vụ chung.
-              </p>
-
-            </div>
-
-            <!-- KHUNG VIDEO YOUTUBE -->
-            <div
-              style="
-                position: relative;
-                width: 100%;
-                padding-top: 56.25%;
-                margin-top: 22px;
-                overflow: hidden;
-                border: 1px solid var(--line);
-                border-radius: 18px;
-                background: #000;
-                box-shadow: var(--shadow-sm);
-              ">
-
-              <iframe
-                src="https://www.youtube.com/embed/_W2__xVcVWg?rel=0"
-                title="Sản phẩm cuộc họp trực tuyến của nhóm"
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                style="
-                  position: absolute;
-                  inset: 0;
-                  width: 100%;
-                  height: 100%;
-                  border: 0;
-                ">
-              </iframe>
-
-            </div>
-
-            <!-- THANH THÔNG TIN VIDEO -->
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                gap: 14px;
-                margin-top: 14px;
-                padding: 14px 16px;
-                border: 1px solid var(--line);
-                border-radius: 14px;
-                background: var(--surface-2);
-              ">
-
-              <span class="muted">
-                Sản phẩm cuộc họp trực tuyến của nhóm
-              </span>
-
-              <a
-                class="btn btn-primary"
-                href="https://www.youtube.com/watch?v=_W2__xVcVWg"
-                target="_blank"
-                rel="noopener">
-                Mở sản phẩm trên YouTube ↗
+          </div>
+
+          <div style="position:relative;width:100%;padding-top:56.25%;margin-top:22px;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#000;box-shadow:var(--shadow-sm)">
+            <iframe
+              src="https://www.youtube.com/embed/_W2__xVcVWg?rel=0"
+              title="Hoạt động tổ chức và tham gia cuộc họp trực tuyến"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="position:absolute;inset:0;width:100%;height:100%;border:0">
+            </iframe>
+          </div>
+
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:14px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2)">
+            <span class="muted">Hoạt động phối hợp trực tuyến của nhóm</span>
+            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=_W2__xVcVWg" target="_blank" rel="noopener">
+              Mở trên YouTube ↗
+            </a>
+          </div>
+        </section>
+
+        <!-- 05. HÌNH ẢNH THỰC HIỆN -->
+        <section class="article-section reveal">
+          <span class="eyebrow">05 · Hình ảnh thực hiện</span>
+          <h2>Hình ảnh sử dụng các công cụ trực tuyến</h2>
+
+          <p>
+            Các hình ảnh dưới đây thể hiện quá trình quản lý nhiệm vụ,
+            chỉnh sửa nội dung, lưu trữ tài liệu và theo dõi tiến độ
+            trong dự án nhóm.
+          </p>
+
+          <p class="muted">Nhấn vào từng ảnh để xem kích thước lớn.</p>
+
+          <div class="gallery">
+            <figure>
+              <img data-lightbox src="assets/images/screenshots/bai4-trello-docs.webp" alt="Bảng Trello và tài liệu Google Docs dùng trong dự án nhóm.">
+              <figcaption>
+                Trello và Google Docs được sử dụng để theo dõi nhiệm vụ
+                và cùng chỉnh sửa nội dung.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img data-lightbox src="assets/images/screenshots/bai4-drive.webp" alt="Thư mục Google Drive dùng để lưu trữ tài liệu nhóm.">
+              <figcaption>
+                Google Drive được sử dụng để lưu báo cáo, hình ảnh,
+                ghi chú và tài liệu dùng chung.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img data-lightbox src="assets/images/screenshots/bai4-theo-doi.webp" alt="Bảng theo dõi nhiệm vụ và đánh giá hiệu quả công cụ.">
+              <figcaption>
+                Bảng theo dõi nhiệm vụ và phần đánh giá hiệu quả
+                của các công cụ hợp tác trực tuyến.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 06. KẾT QUẢ VÀ ĐÁNH GIÁ -->
+        <section class="article-section reveal">
+          <span class="eyebrow">06 · Kết quả và đánh giá</span>
+          <h2>Kết quả đạt được</h2>
+
+          <ul class="check-list">
+            <li>Hoàn thành nhiệm vụ được phân công trong thời gian thực hiện dự án nhóm.</li>
+            <li>Sử dụng được các công cụ quản lý dự án, soạn thảo cộng tác, lưu trữ và giao tiếp nhóm.</li>
+            <li>Theo dõi được tiến độ và trạng thái công việc thông qua bảng Trello.</li>
+            <li>Cùng chỉnh sửa và đóng góp nội dung trên tài liệu cộng tác.</li>
+            <li>Biết tổ chức và lưu trữ tài liệu trong không gian dùng chung.</li>
+            <li>Chủ động trao đổi, phản hồi và phối hợp với các thành viên.</li>
+            <li>Hoàn thành báo cáo, hình ảnh quá trình và hoạt động họp trực tuyến.</li>
+          </ul>
+
+          <h3>Hạn chế trong quá trình thực hiện</h3>
+
+          <ul class="check-list">
+            <li>Lịch học của các thành viên khác nhau nên khó thống nhất thời gian làm việc chung.</li>
+            <li>Một số nhiệm vụ chưa được cập nhật kịp thời trên Trello.</li>
+            <li>Việc chỉnh sửa cùng lúc trên Google Docs đôi khi làm thay đổi bố cục tài liệu.</li>
+            <li>Chất lượng đường truyền mạng có thể ảnh hưởng đến quá trình trao đổi trực tuyến.</li>
+          </ul>
+        </section>
+
+        <!-- 07. PHẢN TƯ -->
+        <section class="article-section reveal">
+          <span class="eyebrow">07 · Phản tư</span>
+          <h2>Bài học rút ra và hướng cải thiện</h2>
+
+          <p>
+            Qua quá trình thực hiện, mình nhận thấy các công cụ số chỉ phát huy
+            hiệu quả khi mỗi thành viên hiểu rõ trách nhiệm, chủ động cập nhật
+            tiến độ và tuân thủ quy ước chung. Việc kết hợp Trello, Google Docs,
+            Google Drive và Zalo giúp quá trình phối hợp trở nên rõ ràng
+            và linh hoạt hơn.
+          </p>
+
+          <h3>Cách cải thiện trong các dự án tiếp theo</h3>
+
+          <ul class="check-list">
+            <li>Mỗi nhiệm vụ nên có một người chịu trách nhiệm chính.</li>
+            <li>Sử dụng checklist và nhãn ưu tiên trong từng thẻ Trello.</li>
+            <li>Đặt thời hạn kiểm tra tiến độ trước ngày nộp chính thức.</li>
+            <li>Thống nhất cấu trúc thư mục Google Drive ngay từ đầu.</li>
+            <li>Sử dụng bình luận và chế độ đề xuất để kiểm soát nội dung chỉnh sửa trên Google Docs.</li>
+            <li>Duy trì một thời điểm cập nhật tiến độ cố định để tránh bỏ sót nhiệm vụ.</li>
+            <li>Ghi lại kết luận và phân công công việc sau mỗi lần trao đổi của nhóm.</li>
+          </ul>
+        </section>
+
+        <!-- 08. BÁO CÁO -->
+        <section class="article-section reveal">
+          <span class="eyebrow">08 · Báo cáo</span>
+          <h2>Báo cáo quá trình thực hiện</h2>
+
+          <p>
+            Báo cáo PDF trình bày chi tiết quá trình sử dụng Trello,
+            Google Docs, Google Drive và Zalo, hiệu quả của từng công cụ,
+            những khó khăn khi phối hợp nhóm và cách giải quyết.
+          </p>
+
+          <p>
+            Trường hợp trình duyệt không hiển thị khung xem trước,
+            có thể sử dụng nút mở báo cáo PDF.
+          </p>
+
+          <div class="pdf-box">
+            <iframe
+              src="reports/Bài 4 – Giao tiếp và hợp tác trong môi trường số.pdf#view=FitH"
+              title="Báo cáo PDF Bài 4 – Giao tiếp và hợp tác trong môi trường số">
+            </iframe>
+
+            <div class="pdf-actions">
+              <span>Báo cáo sử dụng công cụ hợp tác trực tuyến.</span>
+              <a class="btn btn-primary" href="reports/Bài 4 – Giao tiếp và hợp tác trong môi trường số.pdf" target="_blank" rel="noopener">
+                Mở báo cáo PDF ↗
               </a>
-
             </div>
-
-          </section>
-
-          <!-- 05. HÌNH ẢNH QUÁ TRÌNH -->
-          <section class="article-section reveal">
-
-            <span class="eyebrow">
-              05 · Hình ảnh quá trình
-            </span>
-
-            <h2>
-              Quá trình sử dụng công cụ hợp tác trực tuyến
-            </h2>
-
-            <p>
-              Các hình ảnh dưới đây thể hiện việc quản lý nhiệm vụ,
-              đóng góp nội dung, lưu trữ tài liệu
-              và theo dõi tiến độ trong dự án nhóm.
-            </p>
-
-            <p class="muted">
-              Nhấn vào từng ảnh để xem kích thước lớn.
-            </p>
-
-            <div class="gallery">
-
-              <figure>
-
-                <img
-                  data-lightbox
-                  src="assets/images/screenshots/bai4-trello-docs.webp"
-                  alt="Bảng Trello và tài liệu Google Docs dùng trong dự án nhóm."
-                >
-
-                <figcaption>
-                  Trello và Google Docs được sử dụng
-                  để theo dõi nhiệm vụ và cùng chỉnh sửa nội dung.
-                </figcaption>
-
-              </figure>
-
-              <figure>
-
-                <img
-                  data-lightbox
-                  src="assets/images/screenshots/bai4-drive.webp"
-                  alt="Thư mục Google Drive dùng để lưu trữ tài liệu nhóm."
-                >
-
-                <figcaption>
-                  Google Drive được sử dụng để lưu báo cáo,
-                  hình ảnh, ghi chú và tài liệu dùng chung.
-                </figcaption>
-
-              </figure>
-
-              <figure>
-
-                <img
-                  data-lightbox
-                  src="assets/images/screenshots/bai4-theo-doi.webp"
-                  alt="Bảng theo dõi nhiệm vụ và đánh giá hiệu quả công cụ."
-                >
-
-                <figcaption>
-                  Bảng theo dõi nhiệm vụ và phần đánh giá
-                  hiệu quả của các công cụ hợp tác trực tuyến.
-                </figcaption>
-
-              </figure>
-
-            </div>
-
-          </section>
-
-          <!-- 06. KẾT QUẢ VÀ ĐÁNH GIÁ -->
-          <section class="article-section reveal">
-
-            <span class="eyebrow">
-              06 · Kết quả và đánh giá
-            </span>
-
-            <h2>
-              Kết quả của Bài tập 3
-            </h2>
-
-            <ul class="check-list">
-
-              <li>
-                Hoàn thành phần nhiệm vụ cá nhân
-                trong dự án nhóm kéo dài một tuần.
-              </li>
-
-              <li>
-                Sử dụng được công cụ quản lý dự án,
-                soạn thảo cộng tác, lưu trữ
-                và giao tiếp nhóm.
-              </li>
-
-              <li>
-                Có quá trình chỉnh sửa và đóng góp
-                trên tài liệu cộng tác.
-              </li>
-
-              <li>
-                Biết tổ chức và lưu trữ các tệp
-                do cá nhân phụ trách.
-              </li>
-
-              <li>
-                Chủ động trao đổi và phối hợp
-                với các thành viên khác.
-              </li>
-
-              <li>
-                Hoàn thành báo cáo cá nhân
-                kèm hình ảnh thể hiện quá trình thực hiện.
-              </li>
-
-            </ul>
-
-            <h3>
-              Hạn chế trong quá trình thực hiện
-            </h3>
-
-            <ul class="check-list">
-
-              <li>
-                Lịch học của các thành viên khác nhau
-                nên khó thống nhất thời gian làm việc chung.
-              </li>
-
-              <li>
-                Một số nhiệm vụ chưa được cập nhật
-                kịp thời trên Trello.
-              </li>
-
-              <li>
-                Việc chỉnh sửa cùng lúc trên Google Docs
-                đôi khi làm thay đổi bố cục tài liệu.
-              </li>
-
-              <li>
-                Chất lượng đường truyền mạng
-                có thể ảnh hưởng đến quá trình trao đổi trực tuyến.
-              </li>
-
-            </ul>
-
-          </section>
-
-          <!-- 07. PHẢN TƯ -->
-          <section class="article-section reveal">
-
-            <span class="eyebrow">
-              07 · Phản tư
-            </span>
-
-            <h2>
-              Bài học rút ra và hướng cải thiện
-            </h2>
-
-            <p>
-              Qua bài tập, mình nhận thấy các công cụ số chỉ phát huy
-              hiệu quả khi mỗi thành viên hiểu rõ trách nhiệm,
-              chủ động cập nhật tiến độ và tuân thủ quy ước chung.
-              Việc kết hợp Trello, Google Docs, Google Drive và Zalo
-              giúp quá trình phối hợp trở nên rõ ràng và linh hoạt hơn.
-            </p>
-
-            <h3>
-              Cách cải thiện trong các dự án tiếp theo
-            </h3>
-
-            <ul class="check-list">
-
-              <li>
-                Mỗi nhiệm vụ nên có một người chịu trách nhiệm chính.
-              </li>
-
-              <li>
-                Sử dụng checklist và nhãn ưu tiên
-                trong từng thẻ Trello.
-              </li>
-
-              <li>
-                Đặt thời hạn kiểm tra tiến độ
-                trước ngày nộp chính thức.
-              </li>
-
-              <li>
-                Thống nhất cấu trúc thư mục Google Drive
-                ngay từ đầu dự án.
-              </li>
-
-              <li>
-                Sử dụng bình luận và chế độ đề xuất
-                để kiểm soát nội dung chỉnh sửa trên Google Docs.
-              </li>
-
-              <li>
-                Duy trì một thời điểm cập nhật tiến độ cố định
-                để tránh bỏ sót nhiệm vụ.
-              </li>
-
-              <li>
-                Ghi lại kết luận và phân công công việc
-                sau mỗi lần trao đổi của nhóm.
-              </li>
-
-            </ul>
-
-          </section>
-
-          <!-- 08. BÁO CÁO -->
-          <section class="article-section reveal">
-
-            <span class="eyebrow">
-              08 · Báo cáo
-            </span>
-
-            <h2>
-              Sản phẩm chính của Dự án 4
-            </h2>
-
-            <p>
-              Báo cáo PDF là sản phẩm chính của Bài tập 3,
-              trình bày các thao tác cá nhân đã thực hiện,
-              hiệu quả của từng công cụ, những khó khăn
-              khi tương tác nhóm và cách giải quyết.
-              Báo cáo có kèm hình ảnh thể hiện quá trình tham gia
-              trong không gian làm việc chung.
-            </p>
-
-            <p>
-              Trường hợp trình duyệt không hiển thị khung xem trước,
-              có thể sử dụng nút mở báo cáo PDF.
-            </p>
-
-            <div class="pdf-box">
-
-              <iframe
-                src="reports/Bài 4 – Giao tiếp và hợp tác trong môi trường số.pdf#view=FitH"
-                title="Báo cáo PDF Bài 4 – Giao tiếp và hợp tác trong môi trường số">
-              </iframe>
-
-              <div class="pdf-actions">
-
-                <span>
-                  Báo cáo cá nhân của Bài tập 3.
-                </span>
-
-                <a
-                  class="btn btn-primary"
-                  href="reports/Bài 4 – Giao tiếp và hợp tác trong môi trường số.pdf"
-                  target="_blank"
-                  rel="noopener">
-                  Mở báo cáo PDF ↗
-                </a>
-
-              </div>
-
-            </div>
-
-          </section>
-
-          <!-- ĐIỀU HƯỚNG DỰ ÁN -->
-          <nav
-            class="project-nav"
-            aria-label="Chuyển dự án">
-
-            <a href="project-3.html">
-
-              <small>
-                ← Dự án trước
-              </small>
-
-              <strong>
-                Tổng quan về trí tuệ nhân tạo
-              </strong>
-
-            </a>
-
-            <a
-              class="next"
-              href="project-5.html">
-
-              <small>
-                Dự án tiếp theo →
-              </small>
-
-              <strong>
-                Sáng tạo nội dung số
-              </strong>
-
-            </a>
-
-          </nav>
-
-        </article>
-
-        <!-- THANH THÔNG TIN BÊN PHẢI -->
-        <aside class="project-sidebar">
-
-          <div class="sidebar-card reveal">
-
-            <h3>
-              Thông tin dự án
-            </h3>
-
-            <div class="meta-list">
-
-              <div>
-
-                <small>
-                  Nhiệm vụ chính
-                </small>
-
-                <strong>
-                  Bài tập 3 · Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm
-                </strong>
-
-              </div>
-
-              <div>
-
-                <small>
-                  Công cụ chính
-                </small>
-
-                <strong>
-                  Trello · Google Docs · Google Drive · Zalo
-                </strong>
-
-              </div>
-
-              <div>
-
-                <small>
-                  Hình thức
-                </small>
-
-                <strong>
-                  Báo cáo cá nhân trong dự án nhóm
-                </strong>
-
-              </div>
-
-              <div>
-
-                <small>
-                  Sản phẩm chính
-                </small>
-
-                <strong>
-                  Báo cáo PDF · Hình ảnh quá trình
-                </strong>
-
-              </div>
-
-              <div>
-
-                <small>
-                  Sản phẩm bổ sung
-                </small>
-
-                <strong>
-                  Hoạt động họp trực tuyến của nhóm
-                </strong>
-
-              </div>
-
-            </div>
-
           </div>
+        </section>
 
-          <div class="sidebar-card reveal">
+        <!-- ĐIỀU HƯỚNG DỰ ÁN -->
+        <nav class="project-nav" aria-label="Chuyển dự án">
+          <a href="project-3.html">
+            <small>← Dự án trước</small>
+            <strong>Tổng quan về trí tuệ nhân tạo</strong>
+          </a>
 
-            <h3>
-              Điều hướng nhanh
-            </h3>
+          <a class="next" href="project-5.html">
+            <small>Dự án tiếp theo →</small>
+            <strong>Sáng tạo nội dung số</strong>
+          </a>
+        </nav>
 
-            <a
-              class="btn btn-secondary"
-              style="width:100%; margin-bottom:9px;"
-              href="projects.html">
-              ← Tất cả dự án
-            </a>
+      </article>
 
-            <a
-              class="btn btn-secondary"
-              style="width:100%; margin-bottom:9px;"
-              href="#san-pham-bo-sung">
-              Xem sản phẩm bổ sung
-            </a>
+      <!-- THANH BÊN PHẢI -->
+      <aside class="project-sidebar">
 
-            <a
-              class="btn btn-primary"
-              style="width:100%;"
-              href="reports/Bài 4 – Giao tiếp và hợp tác trong môi trường số.pdf"
-              target="_blank"
-              rel="noopener">
-              Xem báo cáo PDF
-            </a>
+        <div class="sidebar-card reveal">
+          <h3>Thông tin dự án</h3>
 
+          <div class="meta-list">
+            <div>
+              <small>Nội dung</small>
+              <strong>Quản lý công việc và phối hợp trực tuyến trong dự án nhóm</strong>
+            </div>
+
+            <div>
+              <small>Công cụ</small>
+              <strong>Trello · Google Docs · Google Drive · Zalo</strong>
+            </div>
+
+            <div>
+              <small>Hình thức</small>
+              <strong>Làm việc và báo cáo trong dự án nhóm</strong>
+            </div>
+
+            <div>
+              <small>Sản phẩm</small>
+              <strong>Báo cáo PDF · Hình ảnh quá trình · Hoạt động họp trực tuyến</strong>
+            </div>
           </div>
+        </div>
 
-        </aside>
+        <div class="sidebar-card reveal">
+          <h3>Điều hướng nhanh</h3>
 
-      </div>
+          <a class="btn btn-secondary" style="width:100%;margin-bottom:9px" href="projects.html">
+            ← Tất cả dự án
+          </a>
 
-    </section>
+          <a class="btn btn-secondary" style="width:100%;margin-bottom:9px" href="#hoat-dong-hop-truc-tuyen">
+            Xem hoạt động họp trực tuyến
+          </a>
 
-  </main>
+          <a class="btn btn-primary" style="width:100%" href="reports/Bài 4 – Giao tiếp và hợp tác trong môi trường số.pdf" target="_blank" rel="noopener">
+            Xem báo cáo PDF
+          </a>
+        </div>
 
-  <!-- CHÂN TRANG -->
-  <footer class="site-footer">
-
-    <div class="container footer-inner">
-
-      <p>
-        © <span data-year></span> Nguyễn Phương Danh ·
-        Portfolio học phần Nhập môn Công nghệ số và Trí tuệ nhân tạo.
-      </p>
-
-      <div class="footer-links">
-
-        <a href="projects.html">
-          6 dự án
-        </a>
-
-        <a href="summary.html">
-          Tổng kết
-        </a>
-
-      </div>
+      </aside>
 
     </div>
+  </section>
 
-  </footer>
+</main>
 
-  <!-- KHUNG PHÓNG TO ẢNH -->
-  <div
-    class="lightbox"
-    role="dialog"
-    aria-modal="true"
-    aria-label="Xem ảnh phóng to">
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span data-year></span> Nguyễn Phương Danh · Portfolio học phần Nhập môn Công nghệ số và Trí tuệ nhân tạo.</p>
 
-    <button aria-label="Đóng">
-      ×
-    </button>
-
-    <img
-      src=""
-      alt=""
-    >
-
+    <div class="footer-links">
+      <a href="projects.html">6 dự án</a>
+      <a href="summary.html">Tổng kết</a>
+    </div>
   </div>
+</footer>
 
-  <script src="assets/js/main.js"></script>
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to">
+  <button aria-label="Đóng">×</button>
+  <img src="" alt="">
+</div>
 
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
