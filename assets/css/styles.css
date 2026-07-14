@@ -1669,10 +1669,12 @@ button[data-theme-toggle] {
 }
   /* Biểu tượng Đại học Quốc gia Hà Nội trên thanh menu */
 .nav-vnu-logo {
-  width: 54px;
-  height: 54px;
+  width: 36px !important;
+  height: 36px !important;
+  max-width: 36px;
+  max-height: 36px;
   display: block;
-  flex: 0 0 auto;
+  flex: 0 0 36px;
   object-fit: contain;
 }
 
