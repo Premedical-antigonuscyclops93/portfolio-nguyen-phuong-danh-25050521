@@ -1664,4 +1664,7 @@ table tr:hover td {
   .project-sidebar {
     position: static;
   }
+button[data-theme-toggle] {
+  display: none;
+}
 }
