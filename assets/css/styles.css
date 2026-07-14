@@ -1667,4 +1667,19 @@ table tr:hover td {
 button[data-theme-toggle] {
   display: none;
 }
+  /* Biểu tượng Đại học Quốc gia Hà Nội trên thanh menu */
+.nav-vnu-logo {
+  width: 54px;
+  height: 54px;
+  display: block;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .nav-vnu-logo {
+    width: 42px;
+    height: 42px;
+  }
+}
 }
