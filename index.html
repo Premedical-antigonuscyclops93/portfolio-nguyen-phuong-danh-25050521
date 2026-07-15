@@ -152,135 +152,71 @@
     </div>
   </div>
 </section>
-/* Năng lực và định hướng cá nhân - bố cục dòng thời gian */
-.development-intro {
-  max-width: 1100px;
-  margin-bottom: 42px;
-}
-.development-intro h2 {
-  margin: 18px 0 16px;
-  font-size: clamp(28pt, 4vw, 42pt);
-  line-height: 1.15;
-}
-.development-intro > p {
-  max-width: 1000px;
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.75;
-}
+<!-- NĂNG LỰC VÀ ĐỊNH HƯỚNG CÁ NHÂN -->
+<section class="section" id="personal-development">
+  <div class="container">
 
-.development-timeline {
-  position: relative;
-  display: grid;
-  gap: 0;
-  max-width: 1180px;
-}
+    <div class="section-heading reveal">
+      <div>
+        <span class="eyebrow">Năng lực và định hướng cá nhân</span>
 
-.development-timeline::before {
-  content: "";
-  position: absolute;
-  top: 32px;
-  bottom: 32px;
-  left: 35px;
-  width: 2px;
-  background: var(--line-strong);
-}
+        <h2>Những năng lực mình đang từng bước phát triển</h2>
+      </div>
 
-.timeline-item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 72px minmax(0, 1fr);
-  gap: 28px;
-  padding: 0 0 42px;
-}
+      <p>
+        Bên cạnh nền tảng kiến thức ngành Kinh tế Phát triển, mình chú trọng
+        rèn luyện khả năng tự học, ứng dụng công nghệ và phân tích thông tin
+        để nâng cao hiệu quả học tập và chuẩn bị cho công việc trong tương lai.
+      </p>
+    </div>
 
-.timeline-item:last-child {
-  padding-bottom: 0;
-}
+    <div class="personal-card-grid">
 
-.timeline-marker {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-}
+      <!-- 01 -->
+      <article class="personal-card-item reveal">
+        <span class="personal-card-number">01</span>
 
-.timeline-marker span {
-  display: inline-flex;
-  width: 70px;
-  height: 70px;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--primary-2);
-  border-radius: 50%;
-  color: #ffffff;
-  background: var(--primary-2);
-  box-shadow: 0 0 0 8px var(--bg);
-  font-size: 18pt;
-  font-weight: 700;
-}
+        <h3>Điểm mạnh cá nhân</h3>
 
-.timeline-content {
-  padding: 3px 0 34px;
-  border-bottom: 1px solid var(--line);
-}
+        <p>
+          <strong>Chủ động học hỏi và linh hoạt thích nghi.</strong>
+          Mình sẵn sàng tìm hiểu kiến thức, trải nghiệm công cụ mới
+          và điều chỉnh phương pháp khi gặp khó khăn. Trong quá trình thực hiện,
+          mình chú trọng tính rõ ràng, chính xác và trách nhiệm đối với kết quả.
+        </p>
+      </article>
 
-.timeline-item:last-child .timeline-content {
-  border-bottom: 0;
-}
+      <!-- 02 -->
+      <article class="personal-card-item reveal">
+        <span class="personal-card-number">02</span>
 
-.timeline-category {
-  margin: 0 0 9px;
-  color: var(--primary-2);
-  font-size: 11pt;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
+        <h3>Lĩnh vực quan tâm</h3>
 
-.timeline-content h3 {
-  margin: 0 0 14px;
-  color: var(--text);
-  font-size: clamp(20pt, 2.5vw, 27pt);
-  line-height: 1.25;
-}
+        <p>
+          <strong>Công nghệ số, trí tuệ nhân tạo và phân tích dữ liệu.</strong>
+          Mình quan tâm đến việc ứng dụng các công cụ này trong học tập,
+          nghiên cứu và xử lý thông tin, qua đó phát triển tư duy logic,
+          khả năng trình bày và giải quyết vấn đề.
+        </p>
+      </article>
 
-.timeline-content > p:not(.timeline-category):not(.timeline-keywords) {
-  max-width: 1000px;
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.75;
-}
+      <!-- 03 -->
+      <article class="personal-card-item reveal">
+        <span class="personal-card-number">03</span>
 
-.timeline-keywords {
-  margin: 18px 0 0;
-  color: var(--primary-2);
-  font-size: 11.5pt;
-  font-weight: 700;
-}
+        <h3>Định hướng nghề nghiệp</h3>
 
-@media (max-width: 700px) {
-  .development-timeline::before {
-    left: 25px;
-  }
+        <p>
+          <strong>Phát triển theo hướng phân tích dữ liệu.</strong>
+          Mình định hướng nâng cao kỹ năng thu thập, xử lý, trực quan hóa
+          và phân tích dữ liệu, đồng thời kết hợp với kiến thức
+          Kinh tế Phát triển để hỗ trợ giải quyết các vấn đề thực tiễn.
+        </p>
+      </article>
 
-  .timeline-item {
-    grid-template-columns: 52px minmax(0, 1fr);
-    gap: 18px;
-    padding-bottom: 34px;
-  }
-
-  .timeline-marker span {
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 0 0 6px var(--bg);
-    font-size: 14pt;
-  }
-
-  .timeline-content h3 {
-    font-size: 18pt;
-  }
-}
+    </div>
+  </div>
+</section>
     </div>
   </div>
 </section>
