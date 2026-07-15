@@ -1711,17 +1711,21 @@ button[data-theme-toggle] {
   opacity: 0.85;
 }
 }
-/* Năng lực và định hướng cá nhân - thẻ dài xếp dọc */
-.personal-journey-list {
+/* Ba thẻ năng lực xếp dọc */
+.personal-stack {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 22px;
+  margin-top: 32px;
 }
 
-.personal-journey-card {
+.personal-stack-card {
   position: relative;
   display: grid;
-  grid-template-columns: 118px minmax(0, 1fr);
-  overflow: hidden;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 26px;
+  width: 100%;
+  padding: 30px 34px;
   border: 1px solid var(--line);
   border-radius: 22px;
   background: var(--surface);
@@ -1729,110 +1733,64 @@ button[data-theme-toggle] {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.personal-journey-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 6px;
-  height: 100%;
-  background: var(--primary-2);
-}
-
-.personal-journey-card:hover {
+.personal-stack-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
 }
 
-.personal-journey-number {
-  display: flex;
+.personal-stack-number {
+  display: inline-flex;
+  width: 62px;
+  height: 62px;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid var(--line);
-  background:
-    linear-gradient(
-      145deg,
-      var(--surface-2),
-      rgba(85, 132, 214, 0.12)
-    );
-}
-
-.personal-journey-number span {
+  border: 1px solid var(--line-strong);
+  border-radius: 16px;
   color: var(--primary-2);
-  font-size: 30pt;
+  background: var(--surface-2);
+  font-size: 19pt;
   font-weight: 700;
-  line-height: 1;
 }
 
-.personal-journey-content {
-  padding: 30px 36px 28px;
-}
-
-.personal-journey-category {
-  margin: 0 0 9px;
+.personal-stack-content h3 {
+  margin: 0 0 12px;
   color: var(--primary-2);
-  font-size: 11pt;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.personal-journey-content h3 {
-  margin: 0 0 15px;
-  color: var(--text);
-  font-size: clamp(20pt, 2.5vw, 26pt);
+  font-size: 22pt;
   line-height: 1.25;
 }
 
-.personal-journey-content > p:not(.personal-journey-category) {
-  max-width: 1050px;
+.personal-stack-content h4 {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: 17pt;
+  line-height: 1.35;
+}
+
+.personal-stack-content p {
+  max-width: 1100px;
   margin: 0;
   color: var(--muted);
   line-height: 1.75;
 }
 
-.personal-journey-keywords {
-  margin-top: 20px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
-  color: var(--primary-2);
-  font-size: 11.5pt;
-  font-weight: 700;
-  line-height: 1.6;
-}
-
-@media (max-width: 760px) {
-  .personal-journey-card {
-    grid-template-columns: 78px minmax(0, 1fr);
-  }
-
-  .personal-journey-number span {
-    font-size: 22pt;
-  }
-
-  .personal-journey-content {
+@media (max-width: 700px) {
+  .personal-stack-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
     padding: 24px 22px;
   }
 
-  .personal-journey-content h3 {
-    font-size: 18pt;
-  }
-}
-
-@media (max-width: 520px) {
-  .personal-journey-card {
-    grid-template-columns: 1fr;
+  .personal-stack-number {
+    width: 52px;
+    height: 52px;
+    font-size: 16pt;
   }
 
-  .personal-journey-number {
-    min-height: 68px;
-    justify-content: flex-start;
-    padding-left: 22px;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
+  .personal-stack-content h3 {
+    font-size: 19pt;
   }
 
-  .personal-journey-number span {
-    font-size: 20pt;
+  .personal-stack-content h4 {
+    font-size: 15.5pt;
   }
 }
