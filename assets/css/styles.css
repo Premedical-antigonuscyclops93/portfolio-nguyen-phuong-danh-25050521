@@ -1791,4 +1791,45 @@ button[data-theme-toggle] {
   .personal-card-item h3 {
     font-size: 18pt;
   }
+  /* Ảnh minh họa trong phần Mục tiêu Portfolio */
+.portfolio-goal-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.portfolio-goal-image {
+  width: 100%;
+  height: 190px;
+  margin: 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: #f7fbff;
+}
+
+.portfolio-goal-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+  cursor: zoom-in;
+  transition: transform 0.35s ease;
+}
+
+.portfolio-goal-card:hover .portfolio-goal-image img {
+  transform: scale(1.035);
+}
+
+.portfolio-goal-card .card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+@media (max-width: 620px) {
+  .portfolio-goal-image {
+    height: 165px;
+  }
+}
 }
