@@ -1617,70 +1617,226 @@ table tr:hover td {
   }
 }
 
+/* =========================================================
+   ĐỊNH DẠNG KHI XUẤT WEBSITE THÀNH PDF
+   ========================================================= */
+
+@page {
+  size: A4 portrait;
+  margin: 14mm 12mm 16mm;
+}
+
 @media print {
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  html,
   body {
-    color: #000000;
-    background: #ffffff;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 13pt;
+    width: auto !important;
+    min-width: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
   }
 
-  .container {
-    width: 100%;
+  body {
+    margin: 0 !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 11.5pt !important;
+    line-height: 1.5 !important;
   }
 
+  /* Ẩn những phần không phù hợp với PDF */
   .site-header,
   .scroll-progress,
   .nav-actions,
+  .menu-btn,
   .lightbox,
   .hero-actions,
   .filter-bar,
+  .project-sidebar,
   .project-nav,
   .pdf-actions,
   .cta,
-  .site-footer {
+  .site-footer,
+  button[data-theme-toggle],
+  video,
+  iframe {
     display: none !important;
   }
 
-  .reveal {
+  /* Hiển thị đầy đủ những phần có hiệu ứng xuất hiện */
+  .reveal,
+  .reveal.visible {
     opacity: 1 !important;
+    visibility: visible !important;
     transform: none !important;
   }
 
-  .article-section,
+  /* Mở rộng nội dung theo khổ giấy */
+  main,
+  .container,
+  .project-layout,
+  .project-main {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .section,
+  .section-sm {
+    margin: 0 !important;
+    padding-top: 8mm !important;
+    padding-bottom: 8mm !important;
+  }
+
+  /* Phần tiêu đề đầu trang */
+  .page-hero {
+    margin: 0 0 8mm !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+
+  .page-hero-inner {
+    min-height: 0 !important;
+    padding: 10mm !important;
+    border: 1px solid #b9d2f7 !important;
+    border-radius: 10px !important;
+    color: #000000 !important;
+    background: #eaf3ff !important;
+    box-shadow: none !important;
+  }
+
+  .page-hero-inner::after {
+    display: none !important;
+  }
+
+  .page-hero h1 {
+    margin: 4mm 0 !important;
+    color: #173f7a !important;
+    font-size: 25pt !important;
+    line-height: 1.15 !important;
+  }
+
+  .page-hero p,
+  .page-hero .breadcrumb,
+  .page-hero .tag {
+    color: #000000 !important;
+  }
+
+  /* Cho phép các phần dài tự ngắt trang */
+  .article-section {
+    margin: 0 0 8mm !important;
+    padding: 7mm !important;
+    border: 1px solid #d6e2f2 !important;
+    border-radius: 8px !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  /* Không tách tiêu đề khỏi nội dung ngay sau nó */
+  h1,
+  h2,
+  h3,
+  h4,
+  .eyebrow {
+    break-after: avoid-page !important;
+    page-break-after: avoid !important;
+  }
+
+  h2 {
+    font-size: 21pt !important;
+  }
+
+  h3 {
+    font-size: 16pt !important;
+  }
+
+  p,
+  li,
+  td,
+  th {
+    color: #000000 !important;
+    font-size: 11.5pt !important;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Giữ các khối nhỏ nguyên vẹn */
   .card,
   .profile-card,
   .content-card,
   .sidebar-card,
-  .quote-card {
-    box-shadow: none;
-    break-inside: avoid;
+  .quote-card,
+  .step,
+  .project-summary-card,
+  .presentation-row,
+  figure,
+  table {
+    box-shadow: none !important;
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
   }
 
-  .project-layout {
-    display: block;
+  /* Hình ảnh không bị tràn khổ A4 */
+  img {
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 220mm !important;
+    object-fit: contain !important;
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
   }
 
-  .project-sidebar {
-    position: static;
+  figure {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
-button[data-theme-toggle] {
-  display: none;
-}
-.nav-vnu-logo {
-  width: 36px !important;
-  height: 36px !important;
-  max-width: 36px;
-  max-height: 36px;
-  display: block;
-  flex: 0 0 36px;
-  object-fit: contain;
-}
 
-@media (max-width: 760px) {
-  .nav-vnu-logo {
-    width: 42px;
-    height: 42px;
+  figcaption {
+    color: #333333 !important;
+    font-size: 10pt !important;
+  }
+
+  /* Bố cục ảnh khi in */
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 5mm !important;
+  }
+
+  .presentation-row,
+  .presentation-row.reverse {
+    grid-template-columns: 1fr !important;
+  }
+
+  .presentation-row.reverse .presentation-media,
+  .presentation-row.reverse .presentation-copy {
+    order: initial !important;
+  }
+
+  /* Không in lại báo cáo PDF đang nhúng trong website */
+  .pdf-box {
+    display: none !important;
+  }
+
+  /* Tránh in màu xanh và gạch chân của liên kết */
+  a,
+  a:visited {
+    color: #000000 !important;
+    text-decoration: none !important;
   }
 }
   /* Liên kết logo Đại học Quốc gia Hà Nội */
