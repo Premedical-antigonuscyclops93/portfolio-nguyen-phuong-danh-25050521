@@ -1,67 +1,681 @@
 <!doctype html>
 <html lang="vi">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Thực hành toàn bộ vòng đời cơ bản của tệp: tạo, đặt tên, sao chép, di chuyển, xóa và khôi phục.">
+
+  <meta
+    name="description"
+    content="Thực hành toàn bộ vòng đời cơ bản của tệp: tạo, đặt tên, sao chép, di chuyển, xóa và khôi phục."
+  >
+
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0b5d45">
+
   <title>Bài 1 - Quản lý tệp và thư mục | Nguyễn Phương Danh</title>
+
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
+
 <div class="scroll-progress" aria-hidden="true"></div>
+
 <header class="site-header">
   <div class="container navbar">
+
     <a class="brand" href="index.html" aria-label="Về Trang giới thiệu">
       <span class="brand-mark">PD</span>
-      <span class="brand-text">Nguyễn Phương Danh<small>Portfolio năng lực số</small></span>
+
+      <span class="brand-text">
+        Nguyễn Phương Danh
+        <small>Portfolio năng lực số</small>
+      </span>
     </a>
-    <nav class="nav-links" aria-label="Điều hướng chính"><a href="index.html" class="">Trang giới thiệu</a><a href="projects.html" class="active">Dự án</a><a href="summary.html" class="">Tổng kết</a></nav>
-      <div class="nav-actions">
-  <a
-    class="nav-logo-link"
-    href="https://www.facebook.com/VNU.DHQG"
-    target="_blank"
-    rel="noopener noreferrer"
-    title="Mở trang Facebook Đại học Quốc gia Hà Nội"
-    aria-label="Mở trang Facebook Đại học Quốc gia Hà Nội"
-  >
-    <img
-      class="nav-vnu-logo"
-       style="width:38px;height:38px;max-width:38px;max-height:38px;object-fit:contain;display:block"
-      src="assets/images/Vietnam_National_University_Logo.svg.webp"
-      alt="Logo Đại học Quốc gia Hà Nội"
-    >
-  </a>
-</div>
+
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="index.html">Trang giới thiệu</a>
+      <a href="projects.html" class="active">Dự án</a>
+      <a href="summary.html">Tổng kết</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a
+        class="nav-logo-link"
+        href="https://www.facebook.com/VNU.DHQG"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Mở trang Facebook Đại học Quốc gia Hà Nội"
+        aria-label="Mở trang Facebook Đại học Quốc gia Hà Nội"
+      >
+        <img
+          class="nav-vnu-logo"
+          src="assets/images/Vietnam_National_University_Logo.svg.webp"
+          alt="Logo Đại học Quốc gia Hà Nội"
+          style="width:38px;height:38px;max-width:38px;max-height:38px;object-fit:contain;display:block"
+        >
+      </a>
     </div>
+
   </div>
 </header>
+
 <main>
-<section class="page-hero"><div class="container"><div class="page-hero-inner reveal"><div class="breadcrumb"><a href="index.html">Trang giới thiệu</a><span>›</span><a href="projects.html">Dự án</a><span>›</span><span>Bài 1</span></div><h1>Quản lý tệp và thư mục</h1><p>Thực hành toàn bộ vòng đời cơ bản của tệp: tạo, đặt tên, sao chép, di chuyển, xóa và khôi phục.</p><div class="hero-tags"><span class="tag" style="color:white;border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1)">Bài 1 · Máy tính và các thiết bị ngoại vi</span></div></div></div></section>
-<section class="section-sm"><div class="container project-layout"><article class="project-main">
-  <section class="article-section reveal"><span class="eyebrow">01 · Mục tiêu</span><h2>Năng lực cần hình thành</h2><p class="lead">Làm quen với File Explorer và hình thành thói quen tổ chức dữ liệu có hệ thống, dễ tìm, dễ sao lưu và hạn chế nhầm lẫn.</p></section>
-  <section class="article-section reveal"><span class="eyebrow">02 · Quá trình</span><h2>Các bước thực hiện</h2><div class="numbered-steps"><div class="step"><div><h4>Tạo không gian làm việc</h4><p>Mở File Explorer, chọn vị trí lưu trữ và tạo thư mục ThucHanh_NguyenPhuongDanh.</p></div></div><div class="step"><div><h4>Thực hành với tệp</h4><p>Tạo GhiChu.txt, đổi thành GhiChuQuanTrong.txt và tạo thư mục con TaiLieu.</p></div></div><div class="step"><div><h4>Phân biệt sao chép và di chuyển</h4><p>Dùng Copy/Paste để tạo bản sao; dùng Cut/Paste để chuyển vị trí tệp.</p></div></div><div class="step"><div><h4>Quản lý vòng đời tệp</h4><p>Xóa vào Recycle Bin, xóa vĩnh viễn bằng Shift + Delete và thử khôi phục tệp.</p></div></div></div></section>
-  <section class="article-section reveal"><span class="eyebrow">03 · Bằng chứng</span><h2>Ảnh minh họa từ sản phẩm</h2><p class="muted">Nhấn vào ảnh để xem kích thước lớn.</p><div class="gallery "><figure><img class="" data-lightbox src="assets/images/screenshots/bai1-tao-thu-muc.webp" alt="Tạo thư mục thực hành và tệp văn bản trong File Explorer."><figcaption>Tạo thư mục thực hành và tệp văn bản trong File Explorer.</figcaption></figure><figure><img class="" data-lightbox src="assets/images/screenshots/bai1-cau-truc-cuoi.webp" alt="Kiểm tra cấu trúc thư mục và thao tác quản lý tệp ở các bước sau."><figcaption>Kiểm tra cấu trúc thư mục và thao tác quản lý tệp ở các bước sau.</figcaption></figure></div></section>
-  <section class="article-section reveal"><span class="eyebrow">04 · Kết quả</span><h2>Những gì đạt được</h2><ul class="check-list"><li>Thực hiện được 12 thao tác cơ bản trên tệp và thư mục.</li><li>Phân biệt rõ Copy/Paste với Cut/Paste.</li><li>Hiểu sự khác nhau giữa xóa thông thường và xóa vĩnh viễn.</li><li>Biết kiểm tra lại cấu trúc lưu trữ sau khi thao tác.</li></ul></section>
-  <section class="article-section reveal"><span class="eyebrow">05 · Phản tư</span><h2>Phân tích và hướng nâng cấp</h2><h3>Lý do của cấu trúc đặt tên</h3><p>Thư mục gốc gắn với tên người thực hiện giúp nhận diện chủ sở hữu; thư mục con <strong>TaiLieu</strong> gom các tệp cùng mục đích; tên <strong>GhiChuQuanTrong</strong> mô tả trực tiếp chức năng của tệp. Nếu thực hiện lại, mình sẽ dùng quy tắc <code>YYYYMMDD_LoaiNoiDung_PhiênBản</code> để dễ sắp xếp theo thời gian và quản lý phiên bản.</p></section>
-  <section class="article-section reveal"><span class="eyebrow">06 · Báo cáo</span><h2>Sản phẩm đầy đủ</h2><p>Bản PDF bên dưới được chuyển trực tiếp từ báo cáo đã hoàn thành. Nếu trình duyệt không hiển thị khung xem trước, hãy dùng nút mở PDF.</p><div class="pdf-box"><iframe src="reports/Bài 1 – Máy tính và các thiết bị ngoại vi.pdf#view=FitH" title="Báo cáo PDF Quản lý tệp và thư mục"></iframe><div class="pdf-actions"><span>Tệp PDF được lưu ngay trong thư mục website.</span><a class="btn btn-primary" href="reports/Bài 1 – Máy tính và các thiết bị ngoại vi.pdf" target="_blank" rel="noopener">Mở báo cáo PDF ↗</a></div></div></section>
-  <nav class="project-nav" aria-label="Chuyển dự án"><span></span><a class="next" href="project-2.html"><small>Dự án tiếp theo →</small><strong>Tìm kiếm và đánh giá thông tin</strong></a></nav>
-</article><aside class="project-sidebar">
-  <div class="sidebar-card reveal"><h3>Thông tin dự án</h3><div class="meta-list"><div><small>Bài tập</small><strong>Bài 1 · Máy tính và các thiết bị ngoại vi</strong></div><div><small>Công cụ</small><strong>Windows 11 · File Explorer</strong></div><div><small>Hình thức</small><strong>Thực hành cá nhân</strong></div><div><small>Sản phẩm</small><strong>Ảnh minh họa + Báo cáo PDF</strong></div></div></div>
-  <div class="sidebar-card reveal"><h3>Điều hướng nhanh</h3><a class="btn btn-secondary" style="width:100%;margin-bottom:9px" href="projects.html">← Tất cả dự án</a><a class="btn btn-primary" style="width:100%" href="reports/Bài 1 – Máy tính và các thiết bị ngoại vi.pdf" target="_blank" rel="noopener">Xem PDF</a></div>
-</aside></div></section>
+
+  <!-- PHẦN ĐẦU TRANG: GIỮ NGUYÊN MÔ TÍP CŨ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner reveal">
+
+        <div class="breadcrumb">
+          <a href="index.html">Trang giới thiệu</a>
+          <span>›</span>
+          <a href="projects.html">Dự án</a>
+          <span>›</span>
+          <span>Bài 1</span>
+        </div>
+
+        <h1>Quản lý tệp và thư mục</h1>
+
+        <p>
+          Thực hành toàn bộ vòng đời cơ bản của tệp:
+          tạo, đặt tên, sao chép, di chuyển, xóa và khôi phục.
+        </p>
+
+        <div class="hero-tags">
+          <span
+            class="tag"
+            style="color:white;border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1)"
+          >
+            Bài 1 · Máy tính và các thiết bị ngoại vi
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container project-layout">
+
+      <article class="project-main">
+
+        <!-- 01 · MỤC TIÊU -->
+        <section class="article-section reveal">
+          <span class="eyebrow">01 · Mục tiêu</span>
+
+          <h2>Năng lực cần hình thành</h2>
+
+          <p class="lead">
+            Bài tập giúp mình làm quen với File Explorer và thực hành
+            các thao tác quản lý tệp, thư mục cơ bản trên hệ điều hành Windows.
+            Qua đó, mình từng bước hình thành thói quen tổ chức dữ liệu
+            có hệ thống, dễ tìm kiếm, dễ kiểm tra và hạn chế nhầm lẫn.
+          </p>
+
+          <h3>Mục tiêu cụ thể</h3>
+
+          <ul class="check-list">
+            <li>
+              Biết mở File Explorer và truy cập các ổ đĩa,
+              thư mục lưu trữ trên máy tính.
+            </li>
+
+            <li>
+              Thực hiện được thao tác tạo thư mục, tạo tệp văn bản
+              và đổi tên tệp.
+            </li>
+
+            <li>
+              Biết xây dựng cấu trúc gồm thư mục chính
+              và thư mục con để phân loại dữ liệu.
+            </li>
+
+            <li>
+              Phân biệt được sao chép tệp bằng Copy/Paste
+              với di chuyển tệp bằng Cut/Paste.
+            </li>
+
+            <li>
+              Hiểu sự khác nhau giữa xóa thông thường,
+              xóa vĩnh viễn và khôi phục tệp từ Recycle Bin.
+            </li>
+
+            <li>
+              Hình thành thói quen kiểm tra tên tệp,
+              vị trí lưu và kết quả sau mỗi thao tác.
+            </li>
+          </ul>
+        </section>
+
+        <!-- 02 · QUÁ TRÌNH -->
+        <section class="article-section reveal">
+          <span class="eyebrow">02 · Quá trình</span>
+
+          <h2>Các bước thực hiện</h2>
+
+          <p>
+            Bài thực hành gồm 12 thao tác, được triển khai theo bốn nhóm chính:
+            thiết lập không gian làm việc, tạo và tổ chức tệp,
+            sao chép – di chuyển dữ liệu, cuối cùng là xóa và khôi phục tệp.
+          </p>
+
+          <div class="numbered-steps">
+
+            <div class="step">
+              <div>
+                <h4>Thiết lập không gian làm việc</h4>
+
+                <p>
+                  Mình mở File Explorer bằng tổ hợp phím
+                  <strong>Windows + E</strong>, sau đó truy cập
+                  <strong>This PC</strong> và lựa chọn ổ đĩa D:
+                  làm vị trí lưu trữ.
+                </p>
+
+                <p>
+                  Tại đây, mình tạo thư mục
+                  <strong>ThucHanh_NguyenPhuongDanh</strong>
+                  và mở thư mục này để bắt đầu thực hành.
+                  Việc tạo một thư mục riêng giúp tập trung toàn bộ dữ liệu
+                  của bài tập tại cùng một vị trí.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div>
+                <h4>Tạo và đặt tên tệp</h4>
+
+                <p>
+                  Trong thư mục thực hành, mình tạo một tệp văn bản
+                  mang tên <strong>GhiChu.txt</strong>.
+                  Sau đó, tệp được đổi tên thành
+                  <strong>GhiChuQuanTrong.txt</strong>.
+                </p>
+
+                <p>
+                  Tên mới thể hiện rõ hơn chức năng và mức độ quan trọng
+                  của tệp, giúp người dùng nhận biết nội dung
+                  mà không cần mở tệp để kiểm tra.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div>
+                <h4>Tạo thư mục con để phân loại dữ liệu</h4>
+
+                <p>
+                  Mình tạo thêm thư mục con
+                  <strong>TaiLieu</strong> bên trong thư mục thực hành.
+                  Thư mục này đóng vai trò tập hợp những tệp
+                  cần được lưu trữ và quản lý chung.
+                </p>
+
+                <p>
+                  Cấu trúc thư mục chính – thư mục con giúp dữ liệu
+                  được phân loại rõ ràng hơn và hạn chế tình trạng
+                  lưu tệp rải rác.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div>
+                <h4>Sao chép tệp bằng Copy/Paste</h4>
+
+                <p>
+                  Mình chọn tệp
+                  <strong>GhiChuQuanTrong.txt</strong>,
+                  sử dụng lệnh Copy hoặc tổ hợp phím
+                  <strong>Ctrl + C</strong>.
+                </p>
+
+                <p>
+                  Sau đó, mình mở thư mục
+                  <strong>TaiLieu</strong> và sử dụng Paste
+                  hoặc <strong>Ctrl + V</strong>.
+                  Kết quả là một bản sao được tạo trong thư mục TaiLieu,
+                  trong khi tệp gốc vẫn còn ở vị trí ban đầu.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div>
+                <h4>Di chuyển tệp bằng Cut/Paste</h4>
+
+                <p>
+                  Mình quay lại thư mục chính và tạo thêm tệp
+                  <strong>DiChuyen.txt</strong>.
+                  Tệp được chọn bằng lệnh Cut hoặc tổ hợp phím
+                  <strong>Ctrl + X</strong>.
+                </p>
+
+                <p>
+                  Sau khi Paste vào thư mục TaiLieu,
+                  tệp gốc biến mất khỏi vị trí cũ và chỉ còn tồn tại
+                  tại vị trí mới. Qua đó, mình nhận biết được
+                  sự khác biệt giữa sao chép và di chuyển dữ liệu.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div>
+                <h4>Xóa và khôi phục tệp</h4>
+
+                <p>
+                  Tệp <strong>GhiChuQuanTrong.txt</strong>
+                  được xóa bằng lệnh Delete và chuyển vào
+                  <strong>Recycle Bin</strong>.
+                </p>
+
+                <p>
+                  Tệp <strong>DiChuyen.txt</strong> được xóa bằng
+                  <strong>Shift + Delete</strong>.
+                  Đây là thao tác xóa vĩnh viễn, không đưa tệp
+                  vào Recycle Bin.
+                </p>
+
+                <p>
+                  Cuối cùng, mình mở Recycle Bin,
+                  tìm tệp GhiChuQuanTrong.txt và sử dụng lệnh
+                  <strong>Restore</strong> để khôi phục
+                  tệp về vị trí ban đầu.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- 03 · BẰNG CHỨNG -->
+        <section class="article-section reveal">
+          <span class="eyebrow">03 · Bằng chứng</span>
+
+          <h2>Ảnh minh họa từ sản phẩm</h2>
+
+          <p class="muted">
+            Các hình ảnh ghi lại những giai đoạn chính trong quá trình
+            tạo thư mục, tạo tệp, đổi tên, sao chép, di chuyển,
+            xóa và khôi phục dữ liệu. Nhấn vào ảnh để xem kích thước lớn.
+          </p>
+
+          <div class="gallery">
+
+            <figure>
+              <img
+                data-lightbox
+                src="assets/images/screenshots/bai1-tao-thu-muc.webp"
+                alt="Tạo thư mục thực hành và tệp văn bản trong File Explorer."
+              >
+
+              <figcaption>
+                Mở File Explorer, lựa chọn vị trí lưu,
+                tạo thư mục thực hành và tạo tệp văn bản ban đầu.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                data-lightbox
+                src="assets/images/screenshots/bai1-cau-truc-cuoi.webp"
+                alt="Kiểm tra cấu trúc thư mục và thao tác quản lý tệp."
+              >
+
+              <figcaption>
+                Kiểm tra cấu trúc thư mục sau khi đổi tên,
+                sao chép, di chuyển, xóa và khôi phục tệp.
+              </figcaption>
+            </figure>
+
+          </div>
+
+          <h3>Cấu trúc lưu trữ được hình thành</h3>
+
+          <p>
+            Thư mục gốc
+            <strong>ThucHanh_NguyenPhuongDanh</strong>
+            được sử dụng làm không gian làm việc chính.
+            Bên trong, thư mục
+            <strong>TaiLieu</strong>
+            giúp tập hợp các tệp có liên quan.
+          </p>
+
+          <p>
+            Cách tổ chức này giúp việc tìm kiếm, kiểm tra,
+            sao lưu và chia sẻ dữ liệu trở nên thuận tiện hơn.
+          </p>
+        </section>
+
+        <!-- 04 · KẾT QUẢ -->
+        <section class="article-section reveal">
+          <span class="eyebrow">04 · Kết quả</span>
+
+          <h2>Những gì đạt được</h2>
+
+          <p>
+            Sau khi hoàn thành bài thực hành, mình không chỉ thực hiện được
+            các thao tác kỹ thuật mà còn hiểu rõ ảnh hưởng của từng lệnh
+            đối với vị trí và trạng thái của tệp.
+          </p>
+
+          <ul class="check-list">
+            <li>
+              Hoàn thành đầy đủ 12 thao tác quản lý tệp và thư mục.
+            </li>
+
+            <li>
+              Biết tạo một không gian lưu trữ riêng
+              theo cấu trúc thư mục chính và thư mục con.
+            </li>
+
+            <li>
+              Biết đặt và đổi tên tệp để nội dung
+              dễ nhận diện hơn.
+            </li>
+
+            <li>
+              Phân biệt rõ Copy/Paste với Cut/Paste.
+            </li>
+
+            <li>
+              Hiểu sự khác nhau giữa Delete
+              và Shift + Delete.
+            </li>
+
+            <li>
+              Biết sử dụng Recycle Bin
+              để khôi phục tệp đã xóa.
+            </li>
+
+            <li>
+              Biết kiểm tra lại cấu trúc lưu trữ
+              sau khi hoàn thành thao tác.
+            </li>
+          </ul>
+        </section>
+
+        <!-- 05 · PHẢN TƯ -->
+        <section class="article-section reveal">
+          <span class="eyebrow">05 · Phản tư</span>
+
+          <h2>Phân tích và hướng nâng cấp</h2>
+
+          <h3>Ý nghĩa của cấu trúc thư mục</h3>
+
+          <p>
+            Qua bài tập, mình nhận thấy quản lý tệp hiệu quả
+            không chỉ là thực hiện đúng các lệnh trong File Explorer,
+            mà còn là xây dựng cấu trúc lưu trữ hợp lý ngay từ đầu.
+          </p>
+
+          <p>
+            Thư mục gốc gắn với tên người thực hiện
+            giúp nhận diện chủ sở hữu. Thư mục con
+            <strong>TaiLieu</strong> giúp tập hợp
+            các tệp có cùng mục đích và hạn chế việc lưu dữ liệu
+            rải rác ở nhiều vị trí.
+          </p>
+
+          <h3>Ý nghĩa của việc đặt tên</h3>
+
+          <p>
+            Tên <strong>GhiChuQuanTrong.txt</strong>
+            mô tả chức năng của tệp rõ hơn
+            so với tên ban đầu <strong>GhiChu.txt</strong>.
+            Tên tệp phù hợp giúp người dùng nhận biết nội dung
+            mà không cần mở từng tệp.
+          </p>
+
+          <h3>Những điểm cần lưu ý</h3>
+
+          <ul class="check-list">
+            <li>
+              Copy/Paste có thể tạo nhiều bản trùng lặp
+              nếu không quản lý phiên bản cẩn thận.
+            </li>
+
+            <li>
+              Cut/Paste làm thay đổi vị trí của tệp gốc,
+              vì vậy cần kiểm tra đúng thư mục đích.
+            </li>
+
+            <li>
+              Shift + Delete có thể khiến dữ liệu
+              không thể khôi phục từ Recycle Bin.
+            </li>
+
+            <li>
+              Sau mỗi thao tác cần kiểm tra lại tên,
+              số lượng và vị trí của tệp.
+            </li>
+          </ul>
+
+          <h3>Hướng cải thiện</h3>
+
+          <p>
+            Nếu thực hiện lại, mình sẽ áp dụng quy tắc đặt tên:
+            <code>YYYYMMDD_LoaiNoiDung_TenChuDe_PhienBan</code>.
+          </p>
+
+          <p>
+            Ví dụ:
+            <code>20260718_BaoCao_CongNgheSo_v01.pdf</code>.
+            Cách đặt tên này giúp sắp xếp theo thời gian,
+            nhận biết nội dung và quản lý các phiên bản dễ dàng hơn.
+          </p>
+        </section>
+
+        <!-- 06 · ỨNG DỤNG -->
+        <section class="article-section reveal">
+          <span class="eyebrow">06 · Ứng dụng</span>
+
+          <h2>Vận dụng vào quản lý tài liệu học tập</h2>
+
+          <p>
+            Những kỹ năng trong bài có thể được áp dụng trực tiếp
+            vào việc quản lý bài giảng, bài tập, báo cáo,
+            tài liệu tham khảo và sản phẩm học tập.
+          </p>
+
+          <div class="numbered-steps">
+
+            <div class="step">
+              <div>
+                <h4>Tổ chức tài liệu theo học phần</h4>
+
+                <p>
+                  Mỗi học phần được lưu trong một thư mục riêng.
+                  Bên trong có thể chia thành các thư mục con như:
+                  Bài giảng, Bài tập, Báo cáo,
+                  Tài liệu tham khảo và Sản phẩm cuối cùng.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div>
+                <h4>Quản lý các phiên bản</h4>
+
+                <p>
+                  Các tệp được chỉnh sửa nhiều lần nên có ký hiệu
+                  phiên bản như v01, v02 hoặc Final
+                  để tránh nhầm lẫn giữa bản cũ và bản mới.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div>
+                <h4>Sao lưu dữ liệu quan trọng</h4>
+
+                <p>
+                  Những tài liệu quan trọng nên được lưu thêm
+                  trên Google Drive, ổ cứng ngoài
+                  hoặc một thiết bị khác để hạn chế nguy cơ mất dữ liệu.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div>
+                <h4>Kiểm tra trước khi xóa</h4>
+
+                <p>
+                  Trước khi sử dụng Delete hoặc Shift + Delete,
+                  cần kiểm tra lại tên tệp, nội dung,
+                  vị trí lưu và bản sao dự phòng.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <h3>Bài học quan trọng</h3>
+
+          <p>
+            Quản lý tệp không chỉ là một thao tác kỹ thuật.
+            Đây còn là thói quen giúp dữ liệu được lưu trữ
+            khoa học, hạn chế thất lạc, trùng lặp
+            và xóa nhầm trong quá trình học tập.
+          </p>
+        </section>
+
+        <!-- 07 · BÁO CÁO -->
+        <section class="article-section reveal">
+          <span class="eyebrow">07 · Báo cáo</span>
+
+          <h2>Sản phẩm đầy đủ</h2>
+
+          <p>
+            Bản PDF bên dưới được chuyển trực tiếp từ báo cáo đã hoàn thành.
+            Nếu trình duyệt không hiển thị khung xem trước,
+            hãy sử dụng nút mở PDF.
+          </p>
+
+          <div class="pdf-box">
+            <iframe
+              src="reports/Bài 1 – Máy tính và các thiết bị ngoại vi.pdf#view=FitH"
+              title="Báo cáo PDF Quản lý tệp và thư mục"
+            ></iframe>
+
+            <div class="pdf-actions">
+              <span>Tệp PDF được lưu ngay trong thư mục website.</span>
+
+              <a
+                class="btn btn-primary"
+                href="reports/Bài 1 – Máy tính và các thiết bị ngoại vi.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                Mở báo cáo PDF ↗
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <nav class="project-nav" aria-label="Chuyển dự án">
+          <span></span>
+
+          <a class="next" href="project-2.html">
+            <small>Dự án tiếp theo →</small>
+            <strong>Tìm kiếm và đánh giá thông tin</strong>
+          </a>
+        </nav>
+
+      </article>
+
+      <aside class="project-sidebar">
+
+        <div class="sidebar-card reveal">
+          <h3>Thông tin dự án</h3>
+
+          <div class="meta-list">
+            <div>
+              <small>Bài tập</small>
+              <strong>Bài 1 · Máy tính và các thiết bị ngoại vi</strong>
+            </div>
+
+            <div>
+              <small>Công cụ</small>
+              <strong>Windows 11 · File Explorer</strong>
+            </div>
+
+            <div>
+              <small>Hình thức</small>
+              <strong>Thực hành cá nhân</strong>
+            </div>
+
+            <div>
+              <small>Sản phẩm</small>
+              <strong>Ảnh minh họa + Báo cáo PDF</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-card reveal">
+          <h3>Điều hướng nhanh</h3>
+
+          <a
+            class="btn btn-secondary"
+            style="width:100%;margin-bottom:9px"
+            href="projects.html"
+          >
+            ← Tất cả dự án
+          </a>
+
+          <a
+            class="btn btn-primary"
+            style="width:100%"
+            href="reports/Bài 1 – Máy tính và các thiết bị ngoại vi.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            Xem PDF
+          </a>
+        </div>
+
+      </aside>
+
+    </div>
+  </section>
+
 </main>
+
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>© <span data-year></span> Nguyễn Phương Danh · Portfolio học phần Nhập môn Công nghệ số và Trí tuệ nhân tạo.</p>
-    <p> Email: phuongdanh54933@gmail.com</p>
-    <div class="footer-links"><a href="projects.html">Dự án</a><a href="summary.html">Tổng kết</a></div>
+
+    <p>
+      © <span data-year></span> Nguyễn Phương Danh ·
+      Portfolio học phần Nhập môn Công nghệ số và Trí tuệ nhân tạo.
+    </p>
+
+    <p>Email: phuongdanh54933@gmail.com</p>
+
+    <div class="footer-links">
+      <a href="projects.html">Dự án</a>
+      <a href="summary.html">Tổng kết</a>
+    </div>
+
   </div>
 </footer>
-<div class="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to"><button aria-label="Đóng">×</button><img src="" alt=""></div>
+
+<div
+  class="lightbox"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Xem ảnh phóng to"
+>
+  <button aria-label="Đóng">×</button>
+  <img src="" alt="">
+</div>
+
 <script src="assets/js/main.js"></script>
+
 </body>
 </html>
